@@ -1,0 +1,308 @@
+version: "2.0"
+stories:
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: affirm
+  - action: utter_happy
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: deny
+  - action: utter_feeling
+  - intent: mood_sad
+  - action: utter_not_sad
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: deny
+  - action: utter_feeling
+  - intent: mood_sad
+  - action: utter_not_sad
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_sad
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_sad
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_sad
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_sad
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_sad
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_sad
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_sad
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_sad
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_sad
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_sad
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_sad
+  - action: utter_did_that_help
+- story: mad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: deny
+  - action: utter_feeling
+  - intent: mood_mad
+  - action: utter_not_mad
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+- story: mad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: deny
+  - action: utter_feeling
+  - intent: mood_mad
+  - action: utter_not_mad
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_mad
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_mad
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_mad
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_mad
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_mad
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_mad
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_mad
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_mad
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_mad
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_mad
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_mad
+  - action: utter_did_that_help
+- story: disgusted path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: deny
+  - action: utter_feeling
+  - intent: mood_disgusted
+  - action: utter_not_disgusted
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+- story: disgusted path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: deny
+  - action: utter_feeling
+  - intent: mood_disgusted
+  - action: utter_not_disgusted
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_disgusted
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_disgusted
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_disgusted
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_disgusted
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_disgusted
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_disgusted
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_disgusted
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_disgusted
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_disgusted
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_disgusted
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_disgusted
+  - action: utter_did_that_help
+- story: fearful path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: deny
+  - action: utter_feeling
+  - intent: mood_fearful
+  - action: utter_not_fearful
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+- story: fearful path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: deny
+  - action: utter_feeling
+  - intent: mood_fearful
+  - action: utter_not_fearful
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_fearful
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_fearful
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_fearful
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_fearful
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_fearful
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_fearful
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_fearful
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_fearful
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_fearful
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_fearful
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_fearful
+  - action: utter_did_that_help
+- story: Story from Conversation ID b51f189da52b4f249f024f795daa3bf5
+  steps:
+  - action: utter_feeling
+  - intent: greet
+  - action: utter_feeling
+- story: surprised path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: deny
+  - action: utter_feeling
+  - intent: mood_surprised
+  - action: utter_not_surprised
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+- story: surprised path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: deny
+  - action: utter_feeling
+  - intent: mood_surprised
+  - action: utter_not_surprised
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_surprised
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_surprised
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_surprised
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_surprised
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_surprised
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_surprised
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_surprised
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_surprised
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_surprised
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_surprised
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_not_surprised
+  - action: utter_did_that_help
+- story: Story from Conversation ID b103b714f918401e8b7f4428d34830db
+  steps:
+  - action: utter_not_sad
+  - intent: deny
+  - action: utter_did_that_help
+  - intent: deny
+  - intent: affirm
+  - action: utter_not_mad
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+- story: Story from Conversation ID c579c1aa75204e22988c66b1affe7cab
+  steps:
+  - action: utter_greet
+  - intent: greet
+  - intent: mood_surprised
+  - action: utter_feeling
+  - intent: mood_sad
+  - intent: deny
+  - action: utter_goodbye
+- story: Story from Conversation ID 2487775ccd6b41d59ba3b68e0dd2b36e
+  steps:
+  - intent: greet
+  - action: utter_feeling
+  - intent: deny
+  - intent: mood_surprised
+  - action: utter_not_surprised
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy

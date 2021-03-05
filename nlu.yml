@@ -1,0 +1,170 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - hey there
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - morning
+    - what's up
+    - afternoon
+    - mornin
+    - what up
+    - sup
+    - evening
+    - yo
+    - hiya
+    - ahoy
+    - ello
+    - howdy
+    - heya
+    - Hey
+    - Hello
+    - whats up
+    - what up?
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - peace out
+    - see ya
+    - dueces
+    - toodles
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - yep
+    - yes!
+    - sure
+    - positively
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - nah
+    - nope
+    - i don't think so
+    - not particularly
+    - not
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: mood_sad
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+    - im sad
+    - i am sad
+    - kinda sad
+    - sorrowful
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - who are you
+- intent: mood_mad
+  examples: |
+    - mad
+    - extremely mad
+    - so mad
+    - very mad
+    - I'm so mad
+    - super mad
+    - I am mad
+    - pissed
+    - im mad
+    - fuming
+- intent: mood_fearful
+  examples: |
+    - fearful
+    - scared
+    - afraid
+    - extremely fearful
+    - extremely scared
+    - extremely afraid
+    - so fearful
+    - so scared
+    - so afraid
+    - very fearful
+    - very scared
+    - very afraid
+    - I'm so fearful
+    - I'm so scared
+    - I'm so afraid
+    - super fearful
+    - super scared
+    - super afraid
+    - I am fearful
+    - I am scared
+    - I am afraid
+    - im afraid
+- intent: mood_disgusted
+  examples: |
+    - disgusted
+    - extremely disgusted
+    - so disgusted
+    - very disgusted
+    - I'm so disgusted
+    - super disgusted
+    - I am disgusted
+- intent: mood_surprised
+  examples: |
+    - surprised
+    - extremely surprised
+    - so surprised
+    - very surprised
+    - I'm so surprised
+    - super surprised
+    - I am surprised
