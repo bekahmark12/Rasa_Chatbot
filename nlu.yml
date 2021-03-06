@@ -30,6 +30,10 @@ nlu:
     - Hello
     - whats up
     - what up?
+    - hiiiiiiiiii
+    - heller
+    - what's good
+    - what's shakin
 - intent: goodbye
   examples: |
     - cu
@@ -58,6 +62,8 @@ nlu:
     - yes!
     - sure
     - positively
+    - yeah
+    - yee
 - intent: deny
   examples: |
     - no
@@ -72,6 +78,8 @@ nlu:
     - i don't think so
     - not particularly
     - not
+    - negative
+    - nay
 - intent: mood_great
   examples: |
     - perfect
@@ -107,6 +115,33 @@ nlu:
     - i am sad
     - kinda sad
     - sorrowful
+    - dismal
+    - heartbroken
+    - melancholy
+    - mournful
+    - pessimistic
+    - somber
+    - wistful
+    - bereaved
+    - blue
+    - cheerless
+    - lackluster
+    - dejected
+    - forlorned
+    - depressed
+    - despairing
+    - despondent
+    - distressed
+    - down
+    - down in the dumps
+    - gloomy
+    - glum
+    - grieved
+    - in grief
+    - in the dumps
+    - low
+    - troubled
+    - weeping
 - intent: bot_challenge
   examples: |
     - are you a bot?
@@ -126,6 +161,28 @@ nlu:
     - pissed
     - im mad
     - fuming
+    - bitter
+    - perturbed
+    - confrontational
+    - agitated
+    - distraught
+    - exasperated
+    - furious
+    - livid
+    - enraged
+    - wrathful
+    - frantic
+    - resentful
+    - berserk
+    - blazing
+    - upsetti spaghetti
+    - incensed
+    - infuriated
+    - irritated
+    - provoked
+    - raged
+    - raging
+    - ornery
 - intent: mood_fearful
   examples: |
     - fearful
@@ -150,6 +207,17 @@ nlu:
     - I am scared
     - I am afraid
     - im afraid
+    - anxious
+    - frightened
+    - alarmed
+    - hesitant
+    - jittery
+    - nervous
+    - panicky
+    - tense
+    - uneasy
+    - disturbed
+    - worried
 - intent: mood_disgusted
   examples: |
     - disgusted
@@ -159,6 +227,19 @@ nlu:
     - I'm so disgusted
     - super disgusted
     - I am disgusted
+    - appalled
+    - queasy
+    - weary
+    - abhorred
+    - nauseated
+    - repelled
+    - repulsed
+    - revolted
+    - sick
+    - grossed out
+    - nauseous
+    - squeamish
+    - icky
 - intent: mood_surprised
   examples: |
     - surprised
@@ -168,3 +249,13 @@ nlu:
     - I'm so surprised
     - super surprised
     - I am surprised
+    - delirious
+    - astonished
+    - bewildered
+    - dazed
+    - shocked
+    - startled
+    - stunned
+    - astounded
+    - stupefied
+    - baffled

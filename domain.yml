@@ -1,0 +1,123 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- mood_great:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- mood_sad:
+    use_entities: true
+- mood_mad:
+    use_entities: true
+- mood_fearful:
+    use_entities: true
+- mood_disgusted:
+    use_entities: true
+- mood_surprised:
+    use_entities: true
+entities: []
+slots: {}
+responses:
+  utter_greet:
+  - text: Hey! How are you feeling? Are you happy?
+  utter_not_sad:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  - image: data:image/jpeg;base64,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
+    text: 'Here are some puppies to cheer you up:'
+  - text: "That reminds me of the mushroom that walked into the bar and the bartender says: \"We don't serve your kind around here!\" And the mushroom looks at him and says, \"What's the matter? I'm a fun-guy!\""
+  - image: https://i.redd.it/nejosst18du11.jpg
+    text: Here's a "hot dog" to cheer you up!
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, I'm happy that you're happy!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_feeling:
+  - text: What emotion are you feeling my friend?
+  utter_not_mad:
+  - text: '"How much more grievous are the consequences of anger than the causes of it."  - Marcus Aurelius'
+  - text: '"It is wise to direct your anger towards problems -- not people; to focus your energies on answers -- not excuses."  - William Arthur Ward'
+  - text: I know when my human friends tell me that they are angry, eating always makes them feel better. Go get some tacos!
+  utter_not_disgusted:
+  - text: Maybe you should step out and get some fresh air, so you feel better. Come back in 5 minutes.
+  - text: If you ate something bad, maybe you should visit the restroom. Don't fight it; throw it up out of your system.
+  - image: https://b.zmtcdn.com/data/pictures/9/17790629/0d6230db62d13baacc1b5d16483b43d8.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*
+    text: Well...I bet you're not disgusted now!
+  utter_not_fearful:
+  - text: |-
+      Here's a story to take your mind off of your fear:    After 37 years of marriage. Jake dumped his wife for his Young secretary.
+
+      His new girlfriend demanded that they live in Jake and Edith’s multi-million dollar home and since the man’s lawyers were a little better he prevailed.
+
+      He gave Edith his now ex-wife just 3 days to move out. She spent the 1st day packing her belongings into boxes crates and suitcases.
+
+      On the 2nd day she had to movers come and collect her things.
+
+      On the 3rd day she sat down for the last time at their beautiful dining room table by candlelight put on some soft background music and feasted on a pound of shrimp a jar of caviar and a bottle of Chardonnay.
+
+      When she had finished she went into each and every room and stuffed half-eaten shrimp shells dipped in caviar into the hollow of all of the curtain rods. She then cleaned up the kitchen and left.
+
+      When the husband returned with his new girlfriend all was bliss for the first few days.
+
+      Then slowly the house began to smell. They tried everything cleaning mopping and airing the place out. Vents were checked for dead rodents and carpets were cleaned. Air fresheners were hung everywhere.
+
+      Exterminators were brought in to set off gas canisters during which they had to move out for a few days and in the end they even replaced the expensive wool carpeting. NOTHING WORKED.
+
+      People stopped coming over to visit. Repairman refused to work in the house.
+
+      The Maid quit.
+
+      Finally they could not take the stench any longer and decided to move.
+
+      A month later even through they had cut their price in half they could not find a buyer for their stinky house.
+
+      Word got out and eventually even the local realtors refused to return their calls. Finally they had to borrow a huge sum of money from the bank to purchase a new place.
+
+      The ex-wife called the man and asked how things were going. He told her the saga of the rotting house. She listened politely and said that she missed her old home terribly and would be willing to reduce her divorce settlement in exchange for getting the house back.
+
+      Knowing his ex-wife had no idea how bad the smell was he agreed on a price that was about 1/10th of what the house ha been worth, but only if she were to sign the papers that very day. She agreed and within the hour his lawyers delivered the paperwork.
+
+      A week later the man and his girlfriend stood smiling as they watched the moving company pack everything to take to their new home.
+
+      INCLUDING THE CURTAIN RODS.:)
+  - image: http://cdn.akc.org/content/article-body-image/bmd_cute_puppies.jpg
+    text: Here's some puppies that can help you not be scared
+  - image: https://i.pinimg.com/originals/1a/11/07/1a11079fa0c7924e23544efe7332a5ce.jpg
+    text: As long as you don't have goose bumps, you should be good
+  utter_not_surprised:
+  - image: https://cdn.cnn.com/cnnnext/dam/assets/190517103414-01-grumpy-cat-file-restricted.jpg
+    text: This cat isn't surprised and he seems pretty happy...
+  - text: I can understand that...my creators once told me a story and I was surprised because they told me that I wasn't a real boy
+  - text: |-
+      Well here's a joke to take your mind off of it: An old man is concerned that his wife is starting to go deaf...
+      The old man goes to the doctor and says, "My wife can't hear very well anymore and I am getting worried. What should I do to help her?"
+
+      The doctor thinks for a minute and says, "First we need to understand how serious the problem is. Stand 25 feet away from her and ask her a question. If she doesn't respond, walk 5 ft closer and ask again. Repeat this until she can hear you and then let me know how far away you were standing."
+
+      The man is so concerned for his wife that he agrees to do what the doctor suggested. When he gets home, he sees his wife cooking in the kitchen. He stands 25 feet from his wife and says, "What's for dinner?"
+
+      The wife does not answer and he walks closer, "What's for dinner?"
+
+      The man does this 2 more times until he is standing only 5 feet from his wife. The man is now very worried and tries one last time, "What's for dinner?"
+
+      The wife looks over and yells at him, "I HAVE TOLD YOU 4 TIMES ALREADY, WE ARE HAVING LASAGNA!"
+actions:
+- listen
+forms: {}
+e2e_actions: []
